@@ -1,9 +1,22 @@
 let errors = [];
+let dataLoaded = false;
 
 // Load errors.json
-fetch("errors.json")
-  .then(res => res.json())
-  .then(data => errors = data);
+fetch("./errors.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("errors.json not found");
+    }
+    return response.json();
+  })
+  .then(data => {
+    errors = data;
+    dataLoaded = true;
+    console.log("Errors loaded:", errors.length);
+  })
+  .catch(error => {
+    console.error("Failed to load errors.json:", error);
+  });
 
 const searchInput = document.getElementById("searchInput");
 const suggestionsBox = document.getElementById("suggestions");
@@ -11,6 +24,8 @@ const resultBox = document.getElementById("result");
 
 // 🔍 AUTOCOMPLETE
 searchInput.addEventListener("input", () => {
+  if (!dataLoaded) return;
+
   const query = searchInput.value.toLowerCase();
   suggestionsBox.innerHTML = "";
 
@@ -38,7 +53,12 @@ searchInput.addEventListener("input", () => {
 
 // 🔎 SEARCH BUTTON
 function searchError() {
-  const query = searchInput.value.toLowerCase();
+  if (!dataLoaded) {
+    resultBox.innerHTML = "<b>Loading data… please try again.</b>";
+    return;
+  }
+
+  const query = searchInput.value.toLowerCase().trim();
   suggestionsBox.innerHTML = "";
 
   const found = errors.find(err =>
