@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Self Solve System Errors</title>
-
-  <!-- Theme CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Fuse.js for fuzzy search -->
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="app-header">
+  <header class="header">
     <h1>Self Solve System Errors</h1>
     <p>Find solutions for common system & software issues</p>
-  </div>
+  </header>
 
   <div class="container">
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Type error code, message, or keyword..."
-    >
-    <button id="searchBtn">Search Solution</button>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Type error code or message..."
+      autocomplete="off"
+    />
 
-    <div id="results"></div>
+    <div id="suggestions" class="suggestions-box"></div>
+
+    <button onclick="searchError()">Search Solution</button>
+
+    <div id="result" class="result-box"></div>
   </div>
 
   <footer>
-    <p>IT Support Knowledge Base</p>
+    IT Support Knowledge Base
   </footer>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js"></script>
 </body>
 </html>
