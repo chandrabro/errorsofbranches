@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CBS_504",
+    "title": "CBS Login Timeout",
+    "keywords": ["504", "timeout", "synergy"],
+    "solution": "Restart the Synergy CBS service and check network connectivity."
+  },
+  {
+    "id": "PRINTER_ERR",
+    "title": "Printer Not Responding",
+    "keywords": ["printer", "offline", "network"],
+    "solution": "Check printer connection and restart the printer. Ensure it is connected to the branch network."
+  },
+  {
+    "id": "ORACLE_12541",
+    "title": "Oracle Listener Not Running",
+    "keywords": ["oracle", "listener", "12541"],
+    "solution": "Start the Oracle listener service and verify database connection."
+  }
+]

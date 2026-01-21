@@ -1,0 +1,105 @@
+:root {
+  --green: #2e7d32;
+  --orange: #f57c00;
+  --light-bg: #f4fdf6;
+  --card-bg: #ffffff;
+  --text-dark: #333;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, var(--green), var(--orange));
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.app-header p {
+  margin-top: 8px;
+  opacity: 0.95;
+  font-size: 14px;
+}
+
+/* Main container */
+.container {
+  background: var(--card-bg);
+  max-width: 650px;
+  margin: -30px auto 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 2px solid #c8e6c9;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+input:focus {
+  border-color: var(--green);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ef6c00;
+}
+
+/* Results */
+#results {
+  margin-top: 20px;
+}
+
+#errorTitle {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--green);
+  margin-bottom: 6px;
+}
+
+#errorSolution {
+  background: #f1f8e9;
+  padding: 12px;
+  border-left: 5px solid var(--orange);
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
