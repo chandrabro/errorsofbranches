@@ -12,9 +12,16 @@
     "solution": "Check printer connection and restart the printer. Ensure it is connected to the branch network."
   },
   {
+    "id": "Unitfund account opening not created for center",
+    "title": "Unitfund account opening not created for center",
+    "keywords": ["Unitfund account", "Unitfund account opening", "opening not created for center"],
+    "solution": "त्यो केन्द्रको center fund account खुलेको छैन त्यसैले Client बाट center मा जाने कुन सेन्टर हो रोजेर Accounts मा जाने अनि माथि plus गर्ने ."
+  },
+  {
     "id": "ORACLE_12541",
     "title": "Oracle Listener Not Running",
     "keywords": ["oracle", "listener", "12541"],
     "solution": "Start the Oracle listener service and verify database connection."
   }
 ]
+
