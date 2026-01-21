@@ -18,10 +18,23 @@
     "solution": "त्यो केन्द्रको center fund account खुलेको छैन त्यसैले Client बाट center मा जाने कुन सेन्टर हो रोजेर Accounts मा जाने अनि माथि plus गर्ने ."
   },
   {
+    "id": "Default account not found for...",
+    "title": "Default account not found for...",
+    "keywords": ["Default account not found", "Default account", "Default account not found for"],
+    "solution": "त्यो सदस्यको personal saving , transaction saving वा अन्य कुनै saving खुलेको छैन , त्यसैले member को profile मा जानु अनि accounts मा गएर plus गरि खाता खोल्नुहोस अनि collection sheet approve हुन्छ | ."
+  },
+   {
+    "id": "Fund limit on vault exceed by amount ",
+    "title": "Fund limit on vault exceed by amount ",
+    "keywords": ["Fund limit on vault exceed", "Fund limit", "Fund limit on vault exceed by amount"],
+    "solution": "Approve मा जानु  bank and vault limit मा गएर  plus  गर्नु अनि operation unit मा सम्पर्क गरि vault approve गराउनु ."
+  },
+  {
     "id": "ORACLE_12541",
     "title": "Oracle Listener Not Running",
     "keywords": ["oracle", "listener", "12541"],
     "solution": "Start the Oracle listener service and verify database connection."
   }
 ]
+
 
